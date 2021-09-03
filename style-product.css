@@ -736,6 +736,18 @@ body {
   color: #F26376;
 }
 
+.wrapper .top .main-box .item-blank .ib-bottom .ibb-box .pb-button-box .pb-button:hover {
+  background-color: #f16d7f;
+}
+
+.wrapper .top .main-box .item-blank .ib-bottom .ibb-box .pb-button-box .pb-button:hover .pb-button-link {
+  color: #FFFFFF;
+}
+
+.wrapper .top .main-box .item-blank .ib-bottom .ibb-box .pb-button-box .pb-button:hover .pb-button-img {
+  display: none;
+}
+
 .wrapper .top .catalog {
   margin: 0 auto;
   width: 71.25%;

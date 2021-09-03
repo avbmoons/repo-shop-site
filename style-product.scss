@@ -560,6 +560,15 @@ body{
                                     }
                                 }
                             }
+                            .pb-button:hover{
+                                background-color: $color-link-active;
+                            }
+                            .pb-button:hover .pb-button-link{
+                                color: $color-site;
+                            }
+                            .pb-button:hover .pb-button-img{
+                                display: none;
+                            }
                         } 
                     }
                 }

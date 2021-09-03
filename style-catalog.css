@@ -478,10 +478,10 @@ body {
 }
 
 .wrapper .top .main-box .products-filter .pf-box .filter .filter-content {
-  /*border:1px solid green;*/
   position: relative;
   width: 100%;
-  margin-top: -14px;
+  margin-top: -16px;
+  margin-left: -4px;
   padding-left: 0;
   text-decoration: none;
   list-style-type: none;
@@ -497,12 +497,11 @@ body {
           flex-direction: column;
   -webkit-box-shadow: 5px 5px 10px 10px #e5e5e5;
           box-shadow: 5px 5px 10px 10px #e5e5e5;
-  /* здесь настройка видимости меню*/
+  /* здесь видимость меню*/
   display: none;
 }
 
 .wrapper .top .main-box .products-filter .pf-box .filter .filter-content .filter-title {
-  /*border: 1px solid orange;*/
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -519,7 +518,6 @@ body {
   font-weight: 600;
   line-height: 17px;
   color: #f16d7f;
-  /*margin-top: 13px;*/
 }
 
 .wrapper .top .main-box .products-filter .pf-box .filter .filter-content .filter-title .filter-img-red {
@@ -530,7 +528,6 @@ body {
   margin-top: 16px;
   list-style-type: none;
   text-decoration: none;
-  /*border: 1px solid blue;*/
 }
 
 .wrapper .top .main-box .products-filter .pf-box .filter .filter-content .filter-content-section .filter-section-decor {
@@ -543,53 +540,89 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  /*border: 1px solid orange;*/
+  /*border: 1px solid red;*/
+  position: relative;
 }
 
 .wrapper .top .main-box .products-filter .pf-box .filter .filter-content .filter-content-section .filter-section-decor .filter-section-line {
   padding-left: 11px;
+  position: absolute;
+  top: 0;
+  left: auto;
 }
 
-.wrapper .top .main-box .products-filter .pf-box .filter .filter-content .filter-content-section .filter-section-decor .filter-section-point {
-  padding-top: 11px;
+.wrapper .top .main-box .products-filter .pf-box .filter .filter-content .filter-content-section .filter-section-decor .accor-block {
+  margin-top: 0px;
+  margin-left: 22px;
+}
+
+.wrapper .top .main-box .products-filter .pf-box .filter .filter-content .filter-content-section .filter-section-decor .accor-block .filter-section-point {
+  margin-top: 11px;
   padding-left: 11px;
-  text-decoration: none;
-  list-style-type: none;
+  /*text-decoration: none;
+                                        list-style-type: none;*/
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
   color: #6F6E6E;
-  /*border: 1px solid orange;*/
+  display: none;
 }
 
-.wrapper .top .main-box .products-filter .pf-box .filter .filter-content .filter-content-section .filter-section-decor:hover .filter-section-point {
-  color: #f16d7f;
+.wrapper .top .main-box .products-filter .pf-box .filter .filter-content .filter-content-section .filter-section-decor .accor-block .filter-section-point-label {
+  padding-top: 11px;
+  padding-left: 11px;
+  z-index: 10;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  cursor: pointer;
+  color: #6F6E6E;
+  /*border: 1px solid green;*/
 }
 
-.wrapper .top .main-box .products-filter .pf-box .filter .filter-content .filter-content-section .filter-section-list {
-  margin-top: 24px;
+.wrapper .top .main-box .products-filter .pf-box .filter .filter-content .filter-content-section .filter-section-decor .accor-block .accor-1 {
+  margin-top: 14px;
+  overflow: hidden;
+  height: 0;
+  z-index: 10;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+}
+
+.wrapper .top .main-box .products-filter .pf-box .filter .filter-content .filter-content-section .filter-section-decor .accor-block .filter-section-list {
+  margin-top: 10px;
   margin-bottom: 13px;
   padding-left: 30px;
+  height: auto;
   text-decoration: none;
   list-style-type: none;
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
-  /*border: 1px solid orange;*/
 }
 
-.wrapper .top .main-box .products-filter .pf-box .filter .filter-content .filter-content-section .filter-section-list .filter-section-row {
+.wrapper .top .main-box .products-filter .pf-box .filter .filter-content .filter-content-section .filter-section-decor .accor-block .filter-section-list .filter-section-row {
   margin-bottom: 11px;
   text-decoration: none;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   color: #6F6E6E;
-  /*border: 1px solid violet;*/
 }
 
-.wrapper .top .main-box .products-filter .pf-box .filter .filter-content .filter-content-section .filter-section-list .filter-section-row:hover {
+.wrapper .top .main-box .products-filter .pf-box .filter .filter-content .filter-content-section .filter-section-decor .accor-block .filter-section-list .filter-section-row:hover {
   color: #f16d7f;
+}
+
+.wrapper .top .main-box .products-filter .pf-box .filter .filter-content .filter-content-section .filter-section-decor .filter-section-point:checked + label {
+  color: #f16d7f;
+}
+
+.wrapper .top .main-box .products-filter .pf-box .filter .filter-content .filter-content-section .filter-section-decor .filter-section-point:checked ~ article {
+  -webkit-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
+  height: 100px;
 }
 
 .wrapper .top .main-box .products-filter .pf-box .filter:hover .filter-content {

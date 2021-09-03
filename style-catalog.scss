@@ -338,120 +338,151 @@ body{
                     display: flex;
                     justify-content: space-between;
                     /*начало стилей для меню фильтра*/
-                .filter{
-                    width: 30%;
-                    align-items: flex-start;
-                    position: relative;
-                    display: inline-block;
-                    z-index: 1;
-                    .filter-heading{
-                        margin-left: 11px;
-                        text-decoration: none;
-                        font-size: 14px;
-                        font-weight: 600;
-                        line-height: 17px;
-                        color: #000;
-                    }
-                    .filter-button{
-                        margin-left: 11px;
-                        background-color: $color-site;
-                        border: none;
-                    }
-                    .filter-content{
-                        /*border:1px solid green;*/
+                    .filter{
+                        width: 30%;
+                        align-items: flex-start;
                         position: relative;
-                        width: 100%;
-                        margin-top: -14px;
-                        padding-left: 0;
-                        text-decoration: none;
-                        list-style-type: none;
-                        background-color: $color-site;
-                        position: absolute;
-                        left: 0;
-                        display: flex;
-                        flex-direction: column;
-                        box-shadow: 5px 5px 10px 10px #e5e5e5;
-                        /* здесь настройка видимости меню*/
-                        display: none;
-                        .filter-title{
-                            /*border: 1px solid orange;*/
-                            margin: 0 auto;
-                            display: flex;
-                            justify-content: flex-start;
-                            .filter-h-4{
-                                padding-right: 11px;
-                                padding-left: 16px;
-                                font-size: 14px;
-                                font-weight: 600;
-                                line-height: 17px;
-                                color: $color-link-active;
-                                /*margin-top: 13px;*/
-                            }
-                            .filter-img-red{
-                                padding-right: 11px;
-                            }
-                        }    
-                        .filter-content-section{
-                            margin-top: 16px;
-                            list-style-type: none;
+                        display: inline-block;
+                        z-index: 1;
+                        .filter-heading{
+                            margin-left: 11px;
                             text-decoration: none;
-                            /*border: 1px solid blue;*/
-                            .filter-section-decor{
+                            font-size: 14px;
+                            font-weight: 600;
+                            line-height: 17px;
+                            color: #000;
+                        }
+                        .filter-button{
+                            margin-left: 11px;
+                            background-color: $color-site;
+                            border: none;
+                        }
+                        .filter-content{
+                            position: relative;
+                            width: 100%;
+                            margin-top: -16px;
+                            margin-left: -4px;
+                            padding-left: 0;
+                            text-decoration: none;
+                            list-style-type: none;
+                            background-color: $color-site;
+                            position: absolute;
+                            left: 0;
+                            display: flex;
+                            flex-direction: column;
+                            box-shadow: 5px 5px 10px 10px #e5e5e5;
+                            /* здесь видимость меню*/
+                            display: none;
+                            .filter-title{
                                 margin: 0 auto;
-                                width: auto;
-                                height: auto;
                                 display: flex;
                                 justify-content: flex-start;
-                                /*border: 1px solid orange;*/
-                                .filter-section-line{
-                                    padding-left: 11px;
-                                }
-                                .filter-section-point{
-                                    padding-top: 11px;
-                                    padding-left: 11px;
-                                    text-decoration: none;
-                                    list-style-type: none;
+                                .filter-h-4{
+                                    padding-right: 11px;
+                                    padding-left: 16px;
                                     font-size: 14px;
-                                    font-weight: 400;
+                                    font-weight: 600;
                                     line-height: 17px;
-                                    color: #6F6E6E;
-                                    /*border: 1px solid orange;*/
+                                    color: $color-link-active;
                                 }
-                            }
-                            .filter-section-decor:hover .filter-section-point{
-                                color: $color-link-active;
-                            }
-                                .filter-section-list{
-                                    margin-top: 24px;
-                                    margin-bottom: 13px;
-                                    padding-left: 30px;
-                                    text-decoration: none;
-                                    list-style-type: none;
-                                    font-size: 14px;
-                                    font-weight: 400;
-                                    line-height: 17px;
-                                    /*border: 1px solid orange;*/
-                                    .filter-section-row{
-                                        margin-bottom: 11px;
-                                        text-decoration: none;
+                                .filter-img-red{
+                                    padding-right: 11px;
+                                }
+                            }    
+                            .filter-content-section{
+                                margin-top: 16px;
+                                list-style-type: none;
+                                text-decoration: none;
+                                .filter-section-decor{
+                                    margin: 0 auto;
+                                    width: auto;
+                                    height: auto;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    /*border: 1px solid red;*/
+                                    position: relative;
+                                    .filter-section-line{
+                                        padding-left: 11px;
+                                        position: absolute;
+                                        top: 0;
+                                        left: auto;
+                                    }
+                                    .accor-block{
+                                        margin-top: 0px;
+                                        margin-left: 22px;
+                                    
+                                    .filter-section-point{
+                                        margin-top: 11px;
+                                        padding-left: 11px;
+                                        /*text-decoration: none;
+                                        list-style-type: none;*/
                                         font-size: 14px;
                                         font-weight: 400;
-                                        line-height: 24px;
+                                        line-height: 17px;
                                         color: #6F6E6E;
-                                        /*border: 1px solid violet;*/
+                                        display: none;
                                     }
-                                    .filter-section-row:hover{
-                                        color: $color-link-active;
+                                    .filter-section-point-label{
+                                        padding-top: 11px;
+                                        padding-left: 11px;
+                                        z-index: 10;
+                                        display: block;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        line-height: 17px;
+                                        cursor: pointer;
+                                        color: #6F6E6E;
+                                        /*border: 1px solid green;*/
                                     }
+                                    .accor-1{
+                                        margin-top: 14px;
+                                        overflow: hidden;
+                                        height: 0;
+                                        z-index: 10;
+                                        transition: 
+                                            height 0.3s ease-in-out;
+                                    }
+                                        .filter-section-list{
+                                            margin-top: 10px;
+                                            margin-bottom: 13px;
+                                            padding-left: 30px;
+                                            height: auto;
+                                            text-decoration: none;
+                                            list-style-type: none;
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                            line-height: 17px;
+                                            .filter-section-row{
+                                                margin-bottom: 11px;
+                                                text-decoration: none;
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                                line-height: 24px;
+                                                color: #6F6E6E;
+                                            }
+                                            .filter-section-row:hover{
+                                                color: $color-link-active;
+                                            }
+                                    }
+                                    }
+                                .filter-section-point:checked + label{
+                                    color: $color-link-active;
+                                }                                
+                                .filter-section-point:checked ~ article{
+                                    transition: height 0.5s ease-in-out;
+                                    height: 100px;
+                                }                                                    
                                 }
-                        }                        
-
-                    }                    
-                }
-                .filter:hover .filter-content{
-                    display: block;
-                }
-                /*конец стилей для меню фильтра*/
+    
+                                    
+                            }                        
+    
+                        }                    
+                    }
+                    .filter:hover .filter-content{
+                        display: block;
+                    }
+                    /*конец стилей для меню фильтра*/
                 .filter-list{
                     margin: 0 auto;
                     width: 70%;
